@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(4, 4, 66);
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background: rgb(11, 11, 78);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(140, 85, 192);
+  /* font-size: 1.02rem; */
+}
+
+.left {
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* color: rgb(140, 85, 192); */
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  margin: 80px 0;
+}
+.firstsection > div {
+  width: 30%;
+}
+.btn {
+  height: 4rem;
+  width: 13rem;
+  margin-top: 1.5rem;
+  color: white;
+  background: rgb(140, 85, 192);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 9px;
+}
+.leftsection {
+  font-size: 1.3rem;
+  height: 40vh;
+  line-height: 3rem;
+}
+.rightsection img {
+  width: 450px;
+}
+.purple {
+  color: rgb(140, 85, 192);
+}
+#element {
+  color: rgb(140, 85, 192);
+}
+
+.secproject {
+  width: 70%;
+  margin-left: 200px;
+  /* background-color: rgb(53, 30, 2); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.sec {
+  border: #ccc;
+  border-style: groove;
+  border-color: rgb(140, 85, 192);
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+#img {
+  width: 272px;
+  height: 200px;
+  border-radius: 3px;
+  box-shadow: #717171;
+  position: relative;
+}
+.ptext {
+  background-color: rgb(116, 172, 221);
+  /* margin-top: 2rempad; */
+  padding: 9px;
+}
+.secproject button {
+  height: 2rem;
+  width: 8rem;
+  margin-top: 1rem;
+  color: white;
+  background: rgb(140, 85, 192);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10%;
+}
+.secproject button a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  background-color: rgb(140, 85, 192);
+}
+
+#project {
+  /* color: purple; */
+  text-align: center;
+  padding: 8rem;
+  font-size: 3rem;
+}
+
+/* <----------aboutsect ----------> */
+.aboutsec {
+  width: 65%;
+  height: 70vh;
+  margin: 8rem 5rem;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  border-style: groove;
+  border-color: rgb(140, 85, 192);
+  border-radius: 4px;
+}
+#img-about {
+  width: 272px;
+  height: 310px;
+  border-radius: 3px;
+  box-shadow: #717171;
+  position: relative;
+  padding: 10px;
+  margin-top: 2rem;
+}
+.aboutsec .left {
+  padding: 20px;
+  margin-top: 2rem;
+}
+.left ul {
+  padding: 2rem;
+}
+
+
+
+.last-part {
+  font-size: 1.3rem;
+  height: 50vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.box-1 {
+  margin-top: 10%;
+}
+
+.box-2 {
+  margin-top: 10%;
+}
+.box-2 a {
+  text-decoration: none;
+  color: white;
+  line-height: 2rem;
+}
+
+/* media qurey  */
+@media screen and (max-width: 767px) {
+  .firstsection {
+    flex-direction: column-reverse;
+  }
+  .rightsection {
+    width: 700px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .leftsection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-grid {
+    grid-template-columns: 235px 235px;
+  }
+}
+
+/* mobile view  */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 60%;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .firstsection {
+    flex-direction: column-reverse;
+  }
+  .btn {
+    width: 25rem;
+    height: 10vh;
+    margin-right: 20rem;
+  }
+  .rightsection {
+    width: 350px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .leftsection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.9rem;
+    align-items: center;
+  }
+  .project-section {
+    font-size: 25px;
+  }
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+}
